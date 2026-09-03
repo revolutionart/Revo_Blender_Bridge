@@ -1,4 +1,7 @@
 site_name: REVO Bridge
+site_url: https://revolutionart.github.io/Revo_Blender_Bridge/
+repo_url: https://github.com/revolutionart/Revo_Blender_Bridge
+repo_name: revolutionart/Revo_Blender_Bridge
 theme:
   name: readthedocs
 extra_css:

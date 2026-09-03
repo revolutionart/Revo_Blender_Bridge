@@ -2,6 +2,8 @@
 
 User documentation for REVO Bridge, built with MkDocs (Read the Docs theme).
 
+Published site: https://revolutionart.github.io/Revo_Blender_Bridge/
+
 ## Preview locally
 
 ```powershell
@@ -20,10 +22,8 @@ the preview refreshes automatically.
 python -m mkdocs build
 ```
 
-To publish with GitHub Pages after Pages is configured for the repository:
-
-```powershell
-python -m mkdocs gh-deploy
-```
+Pushes to `main` build and deploy the site through GitHub Actions. In the GitHub
+repository, set **Settings > Pages > Build and deployment > Source** to
+**GitHub Actions**.
 
 The addon source lives next to this folder in `REVO_Bridge`. Drop screenshots into `docs/assets/img/` and reference them from the matching page.
