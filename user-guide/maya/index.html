@@ -1,0 +1,214 @@
+<!DOCTYPE html><html class="writer-html5" lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="canonical" href="https://revolutionart.github.io/Revo_Blender_Bridge/user-guide/maya/">
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>Maya - REVO Bridge</title>
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/theme_extra.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link href="../../stylesheets/custom.css" rel="stylesheet">
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Maya";
+        var mkdocs_page_input_path = "user-guide/maya.md";
+        var mkdocs_page_url = "/Revo_Blender_Bridge/user-guide/maya/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+        </style></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> REVO Bridge
+        </a><div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here">
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/installation-and-update/">Installation and Update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-try/">First Try</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../user-interface/">User Interface</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../zbrush/">ZBrush</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Maya</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-the-installer-adds">What the installer adds</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#workflow">Workflow</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#maya-to-blender-characters-and-rigs">Maya to Blender: characters and rigs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#settings-utilities">Settings (Utilities)</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../toolbag/">Marmoset Toolbag 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../baker/">Toolbag Baker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../painter/">Substance 3D Painter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FAQ/">FAQ</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">REVO Bridge</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Maya</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/revolutionart/Revo_Blender_Bridge/edit/master/docs/user-guide/maya.md">Edit on revolutionart/Revo_Blender_Bridge</a>
+    </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="maya">Maya<a class="headerlink" href="#maya" title="Permanent link">¶</a></h1>
+<p>The Maya installer follows the version in the configured executable path. A Maya 2026 executable installs into the Maya 2026 user folder, even when Maya 2027 is also installed.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/maya_settings_interface.png" data-desc-position="bottom"><img alt="ZBrush settings" class="doc-shot" src="../../assets/img/maya_settings_interface.png"></a></p>
+<h2 id="what-the-installer-adds">What the installer adds<a class="headerlink" href="#what-the-installer-adds" title="Permanent link">¶</a></h2>
+<ul>
+<li><code>REVO_Bridge.py</code> to <code>plug-ins</code></li>
+<li><code>revo_bridge_maya.py</code> and both shelf icons to <code>scripts</code></li>
+<li><code>shelf_REVO_Bridge.mel</code> to the shelf preferences</li>
+<li>A managed loader block to <code>userSetup.py</code></li>
+</ul>
+<p>REVO Bridge makes a timestamped backup before changing an existing file. Use <strong>Restore Maya userSetup.py</strong> in Integrations to restore the latest backup.</p>
+<p>Restart Maya after installing. The <strong>REVO_Bridge</strong> shelf has separate visible
+<strong>FBX</strong> and <strong>USD</strong> export buttons plus an import button.</p>
+<h2 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">¶</a></h2>
+<ol>
+<li>Select the character meshes, armature, or enclosing hierarchy in Blender,
+   choose <strong>FBX</strong> or <strong>USD</strong> under <strong>Utilities &gt; Maya &gt; Transfer Format</strong>, then choose
+   <strong>Export to Maya</strong>.</li>
+<li>Maya auto-imports after the plugin is installed (or use the shelf <strong>Import from Blender</strong> button).</li>
+<li>Send a mesh back with <strong>Export to Blender</strong>. Blender auto-imports if that option is on.</li>
+</ol>
+<h3 id="maya-to-blender-characters-and-rigs">Maya to Blender: characters and rigs<a class="headerlink" href="#maya-to-blender-characters-and-rigs" title="Permanent link">¶</a></h3>
+<p>Select the character's enclosing group, or select the rig root and skinned meshes,
+then click the Maya shelf's <strong>FBX</strong> or <strong>USD</strong> export button.</p>
+<ul>
+<li>FBX includes the selected child hierarchy, joints, skinning, blend shapes,
+  animation connections, and constraints supported by the FBX interchange.</li>
+<li>USD includes the selected hierarchy as well as UsdSkel skeletons, skinning,
+  animation over Maya's playback range, blend shapes, and USD Preview Surface materials.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Interchange limits</p>
+<p>FBX and USD preserve the portable character data, not Maya's complete native
+dependency graph. Maya-only controller logic, expressions, custom nodes, and
+some constraints cannot become equivalent Blender rig logic. Bake animation
+first when that logic drives motion that must arrive exactly.</p>
+</div>
+<h2 id="settings-utilities">Settings (Utilities)<a class="headerlink" href="#settings-utilities" title="Permanent link">¶</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/maya_settings.png" data-desc-position="bottom"><img alt="Maya settings" class="doc-shot" src="../../assets/img/maya_settings.png"></a></p>
+<ul>
+<li>Maya export scale (default <code>1.0</code>; FBX unit scale covers Blender metres to Maya centimetres in most cases)</li>
+<li>Transfer Format (FBX or USD) for Blender to Maya</li>
+<li>Auto-import from Maya</li>
+<li>Maya executable path</li>
+<li>Launch Maya on export</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../zbrush/" class="btn btn-neutral float-left" title="ZBrush"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../toolbag/" class="btn btn-neutral float-right" title="Marmoset Toolbag 5">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/revolutionart/Revo_Blender_Bridge" class="fa fa-code-fork" style="color: #fcfcfc"> revolutionart/Revo_Blender_Bridge</a>
+        </span>
+    
+    
+      <span><a href="../zbrush/" style="color: #fcfcfc">« Previous</a></span>
+    
+    
+      <span><a href="../toolbag/" style="color: #fcfcfc">Next »</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>

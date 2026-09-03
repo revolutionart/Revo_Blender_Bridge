@@ -1,0 +1,298 @@
+<!DOCTYPE html><html class="writer-html5" lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="canonical" href="https://revolutionart.github.io/Revo_Blender_Bridge/user-guide/FAQ/">
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>FAQ - REVO Bridge</title>
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/theme_extra.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link href="../../stylesheets/custom.css" rel="stylesheet">
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "FAQ";
+        var mkdocs_page_input_path = "user-guide/FAQ.md";
+        var mkdocs_page_url = "/Revo_Blender_Bridge/user-guide/FAQ/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+        </style></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> REVO Bridge
+        </a><div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here">
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/installation-and-update/">Installation and Update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-try/">First Try</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../user-interface/">User Interface</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../zbrush/">ZBrush</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maya/">Maya</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../toolbag/">Marmoset Toolbag 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../baker/">Toolbag Baker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../painter/">Substance 3D Painter</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">FAQ</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#general">General</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#q-is-this-a-live-link">Q: Is this a live-link?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-does-it-work-on-macos">Q: Does it work on macOS?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-where-are-the-transfer-files">Q: Where are the transfer files?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-does-the-server-talk-to-the-internet">Q: Does the server talk to the internet?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-who-is-responsible-if-a-file-is-overwritten">Q: Who is responsible if a file is overwritten?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#q-i-see-revo-bridge-in-zbrushs-plugin-folder-as-a-txt-but-nothing-in-zplugin">Q: I see REVO Bridge in ZBrush's plugin folder as a .txt, but nothing in ZPlugin</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-maya-has-no-shelf-after-install">Q: Maya has no shelf after install</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-maya-shows-color-management-initialization-failed">Q: Maya shows Color Management Initialization failed</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-i-updated-the-blender-zip-but-toolbag-still-behaves-like-the-old-plugin">Q: I updated the Blender ZIP but Toolbag still behaves like the old plugin</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-where-is-the-painter-plugin">Q: Where is the Painter plugin?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#toolbag-baker">Toolbag Baker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#q-high-and-low-are-in-the-baker-but-the-maps-are-blank">Q: High and Low are in the baker but the maps are blank</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-export-format-says-usd-but-bake-project-imports-an-fbx">Q: Export Format says USD but Bake Project imports an FBX</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-create-bake-project-only-opens-toolbag-and-does-nothing">Q: Create Bake Project only opens Toolbag and does nothing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-winerror-5-access-denied-on-the-bake-folder">Q: WinError 5 / access denied on the bake folder</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-validate-fails">Q: Validate fails</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-cage-looks-huge-or-tiny">Q: Cage looks huge or tiny</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#send-and-receive">Send and receive</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#q-why-does-export-to-toolbag-open-the-revo-plugin-but-import-from-toolbag-does-not">Q: Why does Export to Toolbag open the REVO plugin, but Import from Toolbag does not?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-does-zbrush-auto-import-from-blender">Q: Does ZBrush auto-import from Blender?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-does-maya-auto-import-both-ways">Q: Does Maya auto-import both ways?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-zbrush-overwrote-the-wrong-subtool">Q: ZBrush overwrote the wrong SubTool</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-why-did-maya-export-the-whole-child-hierarchy">Q: Why did Maya export the whole child hierarchy?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-painter-textures-did-not-come-back-to-blender">Q: Painter textures did not come back to Blender</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-painter-overwrote-my-starter-file-or-an-old-painting">Q: Painter overwrote my starter file or an old painting</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#q-why-did-duplicating-the-painter-project-take-so-much-disk-space">Q: Why did duplicating the Painter project take so much disk space?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#if-send-or-receive-stops">If send or receive stops</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">REVO Bridge</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">FAQ</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/revolutionart/Revo_Blender_Bridge/edit/master/docs/user-guide/FAQ.md">Edit on revolutionart/Revo_Blender_Bridge</a>
+    </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">¶</a></h1>
+<h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">¶</a></h2>
+<h3 id="q-is-this-a-live-link">Q: Is this a live-link?<a class="headerlink" href="#q-is-this-a-live-link" title="Permanent link">¶</a></h3>
+<p>No. Each send writes files to the transfer folder. You export, work in the other DCC, then send back.</p>
+<h3 id="q-does-it-work-on-macos">Q: Does it work on macOS?<a class="headerlink" href="#q-does-it-work-on-macos" title="Permanent link">¶</a></h3>
+<p>No. REVO Bridge 1.0.0 is Windows only.</p>
+<h3 id="q-where-are-the-transfer-files">Q: Where are the transfer files?<a class="headerlink" href="#q-where-are-the-transfer-files" title="Permanent link">¶</a></h3>
+<p>Default: <code>%TEMP%\REVO_Bridge</code>. Open it from <strong>Utilities &gt; Open Transfer Folder</strong>. A custom parent folder in Preferences still uses a <code>REVO_Bridge</code> subfolder.</p>
+<h3 id="q-does-the-server-talk-to-the-internet">Q: Does the server talk to the internet?<a class="headerlink" href="#q-does-the-server-talk-to-the-internet" title="Permanent link">¶</a></h3>
+<p>No. It listens on <code>127.0.0.1</code> only (default port <code>58772</code>). Commands need a private token in the transfer folder. Browser-origin requests are rejected.</p>
+<h3 id="q-who-is-responsible-if-a-file-is-overwritten">Q: Who is responsible if a file is overwritten?<a class="headerlink" href="#q-who-is-responsible-if-a-file-is-overwritten" title="Permanent link">¶</a></h3>
+<p>You are. REVO Bridge is not responsible for lost Painter projects or other data loss. You are responsible for how you use the plugin, including which files you point it at and when you save in the other applications.</p>
+<hr>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h2>
+<h3 id="q-i-see-revo-bridge-in-zbrushs-plugin-folder-as-a-txt-but-nothing-in-zplugin">Q: I see REVO Bridge in ZBrush's plugin folder as a <code>.txt</code>, but nothing in ZPlugin<a class="headerlink" href="#q-i-see-revo-bridge-in-zbrushs-plugin-folder-as-a-txt-but-nothing-in-zplugin" title="Permanent link">¶</a></h3>
+<p>ZBrush 2026 loads compiled <code>.zsc</code> files, not <code>.txt</code>. Install from Blender <strong>Integrations</strong> so <code>REVO_Bridge.zsc</code> is copied, then restart ZBrush.</p>
+<h3 id="q-maya-has-no-shelf-after-install">Q: Maya has no shelf after install<a class="headerlink" href="#q-maya-has-no-shelf-after-install" title="Permanent link">¶</a></h3>
+<p>Restart Maya. Confirm Plugin Manager has <code>REVO_Bridge.py</code> loaded. The installer follows the Maya version in the executable path you set.</p>
+<h3 id="q-maya-shows-color-management-initialization-failed">Q: Maya shows Color Management Initialization failed<a class="headerlink" href="#q-maya-shows-color-management-initialization-failed" title="Permanent link">¶</a></h3>
+<p>Maya does not use Blender's color config. Close Maya, <strong>Restart</strong> the bridge server in Integrations, then launch Maya from Blender again. Blender 5.2 was passing its OCIO 2.5 file into Maya, which only understands OCIO 2.4.</p>
+<h3 id="q-i-updated-the-blender-zip-but-toolbag-still-behaves-like-the-old-plugin">Q: I updated the Blender ZIP but Toolbag still behaves like the old plugin<a class="headerlink" href="#q-i-updated-the-blender-zip-but-toolbag-still-behaves-like-the-old-plugin" title="Permanent link">¶</a></h3>
+<p>Run <strong>Install / Update Toolbag Plugin</strong>, then <strong>fully quit</strong> Toolbag (not just the scene) and Create Bake Project again.</p>
+<h3 id="q-where-is-the-painter-plugin">Q: Where is the Painter plugin?<a class="headerlink" href="#q-where-is-the-painter-plugin" title="Permanent link">¶</a></h3>
+<p>Install it from Blender's <strong>Integrations</strong>, restart Painter, then enable
+<code>revo_bridge_painter</code> in Painter's <strong>Python</strong> menu.</p>
+<hr>
+<h2 id="toolbag-baker">Toolbag Baker<a class="headerlink" href="#toolbag-baker" title="Permanent link">¶</a></h2>
+<h3 id="q-high-and-low-are-in-the-baker-but-the-maps-are-blank">Q: High and Low are in the baker but the maps are blank<a class="headerlink" href="#q-high-and-low-are-in-the-baker-but-the-maps-are-blank" title="Permanent link">¶</a></h3>
+<p>Turn on <strong>Use Hidden Meshes</strong>. Toolbag Quick Loader hides the High group after import. With that option off, the high poly is ignored and the bake writes empty maps. It is enabled by default in the plugin.</p>
+<h3 id="q-export-format-says-usd-but-bake-project-imports-an-fbx">Q: Export Format says USD but Bake Project imports an FBX<a class="headerlink" href="#q-export-format-says-usd-but-bake-project-imports-an-fbx" title="Permanent link">¶</a></h3>
+<p>That is expected. <strong>Export Format</strong> is for <strong>Export to Toolbag</strong> only. <strong>Create Bake Project</strong> always uses FBX so Quick Loader can group <code>_low</code> / <code>_high</code> meshes.</p>
+<h3 id="q-create-bake-project-only-opens-toolbag-and-does-nothing">Q: Create Bake Project only opens Toolbag and does nothing<a class="headerlink" href="#q-create-bake-project-only-opens-toolbag-and-does-nothing" title="Permanent link">¶</a></h3>
+<p>Quit Toolbag completely, install this ZIP, then Create Bake Project again. Toolbag has to boot with the REVO Bridge Python script so it can read the bake request.</p>
+<h3 id="q-winerror-5-access-denied-on-the-bake-folder">Q: WinError 5 / access denied on the bake folder<a class="headerlink" href="#q-winerror-5-access-denied-on-the-bake-folder" title="Permanent link">¶</a></h3>
+<p><code>//Bakes/</code> is blend-relative. Save the Blender file, or set an absolute bake output folder. Unsaved files fall back to the transfer folder.</p>
+<h3 id="q-validate-fails">Q: Validate fails<a class="headerlink" href="#q-validate-fails" title="Permanent link">¶</a></h3>
+<p>Names must look like <code>asset_low</code> / <code>asset_high</code>. Each group needs both roles. Low meshes need geometry and a UV map. Only the selected meshes are exported.</p>
+<h3 id="q-cage-looks-huge-or-tiny">Q: Cage looks huge or tiny<a class="headerlink" href="#q-cage-looks-huge-or-tiny" title="Permanent link">¶</a></h3>
+<p>Cage offsets are authored in Blender units and converted to Toolbag centimetres on export. Start with the default max offset (<code>0.02</code>) and <strong>Estimate Cage Offset</strong>.</p>
+<hr>
+<h2 id="send-and-receive">Send and receive<a class="headerlink" href="#send-and-receive" title="Permanent link">¶</a></h2>
+<h3 id="q-why-does-export-to-toolbag-open-the-revo-plugin-but-import-from-toolbag-does-not">Q: Why does Export to Toolbag open the REVO plugin, but Import from Toolbag does not?<a class="headerlink" href="#q-why-does-export-to-toolbag-open-the-revo-plugin-but-import-from-toolbag-does-not" title="Permanent link">¶</a></h3>
+<p>Blender can only start the Toolbag plugin by <strong>launching</strong> Toolbag with the plugin as a boot script. That is what <strong>Export to Toolbag</strong> and <strong>Create Bake Project</strong> do, so the window appears and Toolbag auto-imports.</p>
+<p><strong>Import from Toolbag</strong> talks to a Toolbag that is already running. Toolbag does not let another app open a plugin in an existing session. Focusing Toolbag is not enough. Open <strong>Edit &gt; Plugins &gt; Revo_Bridge</strong> once, leave the window open, then <strong>Export Scene to Blender</strong>. Blender auto-imports that file.</p>
+<h3 id="q-does-zbrush-auto-import-from-blender">Q: Does ZBrush auto-import from Blender?<a class="headerlink" href="#q-does-zbrush-auto-import-from-blender" title="Permanent link">¶</a></h3>
+<p>No. ZScript has no idle timer that is safe for this. Always click <strong>Receive from Blender</strong>. Send the other way with <strong>Send to Blender</strong>; Blender can auto-import.</p>
+<h3 id="q-does-maya-auto-import-both-ways">Q: Does Maya auto-import both ways?<a class="headerlink" href="#q-does-maya-auto-import-both-ways" title="Permanent link">¶</a></h3>
+<p>Yes, after the Maya plugin is installed and Maya has been restarted. Blender auto-import from Maya is on by default.</p>
+<h3 id="q-zbrush-overwrote-the-wrong-subtool">Q: ZBrush overwrote the wrong SubTool<a class="headerlink" href="#q-zbrush-overwrote-the-wrong-subtool" title="Permanent link">¶</a></h3>
+<p>Receive always replaces the <strong>active</strong> SubTool. Select the correct one before you click <strong>Receive from Blender</strong>. ZBrush does not auto-import.</p>
+<h3 id="q-why-did-maya-export-the-whole-child-hierarchy">Q: Why did Maya export the whole child hierarchy?<a class="headerlink" href="#q-why-did-maya-export-the-whole-child-hierarchy" title="Permanent link">¶</a></h3>
+<p>That is intentional: Maya export now preserves selected characters and rigs. Select
+only a mesh if you want only that branch, or select the character group / rig root
+and meshes for a complete character transfer. Use FBX by clicking the shelf button,
+or right-click it and choose USD.</p>
+<h3 id="q-painter-textures-did-not-come-back-to-blender">Q: Painter textures did not come back to Blender<a class="headerlink" href="#q-painter-textures-did-not-come-back-to-blender" title="Permanent link">¶</a></h3>
+<p>Install the Painter plugin from Blender's <strong>Integrations</strong>, restart Painter, and
+enable <code>revo_bridge_painter</code> from Painter's <strong>Python</strong> menu. Then use
+<strong>File &gt; REVO Bridge: Export Textures to Blender</strong>. Blender auto-imports by
+default. <strong>Import Textures from Painter</strong> reapplies the latest successful export
+and reloads image files; it has nothing to import until Painter has sent one.
+Texture Set names may be changed: Blender creates and assigns a corresponding
+material when no existing material matches.</p>
+<h3 id="q-painter-overwrote-my-starter-file-or-an-old-painting">Q: Painter overwrote my starter file or an old painting<a class="headerlink" href="#q-painter-overwrote-my-starter-file-or-an-old-painting" title="Permanent link">¶</a></h3>
+<p>You can use your own existing project, but copy it first. Do not point <strong>Existing Project</strong> at the original. <strong>Save</strong> in Substance Painter overwrites the opened file. Always keep this in mind. You are responsible for how you use this. REVO Bridge is not responsible for data loss. See <a href="../painter/#starter-project-best-practice">Starter project</a>.</p>
+<h3 id="q-why-did-duplicating-the-painter-project-take-so-much-disk-space">Q: Why did duplicating the Painter project take so much disk space?<a class="headerlink" href="#q-why-did-duplicating-the-painter-project-take-so-much-disk-space" title="Permanent link">¶</a></h3>
+<p>The plugin's extra working copy is a full file copy of the <code>.spp</code>, not a shortcut. Copy a small starter yourself first. Do not point <strong>Existing Project</strong> at a finished multi-gigabyte painting unless you want that much duplicated.</p>
+<hr>
+<h2 id="if-send-or-receive-stops">If send or receive stops<a class="headerlink" href="#if-send-or-receive-stops" title="Permanent link">¶</a></h2>
+<ol>
+<li>Confirm the local server shows as running in the sidebar.</li>
+<li>Open <strong>Integrations</strong>, choose <strong>Check Status</strong>, then <strong>Restart</strong> if needed.</li>
+<li>Confirm the DCC executable path in <strong>Utilities</strong>.</li>
+<li>Confirm that DCC's plugin was installed and the application was restarted.</li>
+<li>Use <strong>Clear Pending Data</strong> or the per-DCC clear button if a stale import is blocking a new send.</li>
+<li>Use <strong>Open Transfer Folder</strong> to inspect <code>%TEMP%\REVO_Bridge</code>.</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../painter/" class="btn btn-neutral float-left" title="Substance 3D Painter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/revolutionart/Revo_Blender_Bridge" class="fa fa-code-fork" style="color: #fcfcfc"> revolutionart/Revo_Blender_Bridge</a>
+        </span>
+    
+    
+      <span><a href="../painter/" style="color: #fcfcfc">« Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>

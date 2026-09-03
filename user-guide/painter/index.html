@@ -1,0 +1,242 @@
+<!DOCTYPE html><html class="writer-html5" lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="canonical" href="https://revolutionart.github.io/Revo_Blender_Bridge/user-guide/painter/">
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>Substance 3D Painter - REVO Bridge</title>
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/theme_extra.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link href="../../stylesheets/custom.css" rel="stylesheet">
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Substance 3D Painter";
+        var mkdocs_page_input_path = "user-guide/painter.md";
+        var mkdocs_page_url = "/Revo_Blender_Bridge/user-guide/painter/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+        </style></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> REVO Bridge
+        </a><div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here">
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/installation-and-update/">Installation and Update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-try/">First Try</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../user-interface/">User Interface</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../zbrush/">ZBrush</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maya/">Maya</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../toolbag/">Marmoset Toolbag 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../baker/">Toolbag Baker</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Substance 3D Painter</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#use-a-painter-material-on-another-blender-mesh">Use a Painter material on another Blender mesh</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#settings-utilities">Settings (Utilities)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#starter-project-best-practice">Starter project (best practice)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ue5-aces-20-color-setup">UE5 ACES 2.0 Color Setup</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FAQ/">FAQ</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">REVO Bridge</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Substance 3D Painter</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/revolutionart/Revo_Blender_Bridge/edit/master/docs/user-guide/painter.md">Edit on revolutionart/Revo_Blender_Bridge</a>
+    </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="substance-3d-painter">Substance 3D Painter<a class="headerlink" href="#substance-3d-painter" title="Permanent link">¶</a></h1>
+<p>Select one or more Blender meshes and click <strong>Create / Update Painter Project</strong>. REVO Bridge exports <code>substance_import.usd</code> with UVs, normals, material assignments and compatible USD material data, then launches Painter with that mesh. Each Blender material assignment becomes a Painter Texture Set.</p>
+<p>Painter texture exchange is bidirectional. Blender keeps the original geometry;
+the return trip updates its materials with Painter's exported texture maps.</p>
+<p>Install the Painter helper from <strong>Integrations</strong>, restart Painter, and enable
+<code>revo_bridge_painter</code> from Painter's <strong>Python</strong> menu. Use
+<strong>File &gt; REVO Bridge: Export Textures to Blender</strong> when the project is ready.
+Blender auto-imports the result by default, or you can click
+<strong>Import Textures from Painter</strong>. After an automatic import, REVO retains the
+latest successful export manifest. Clicking the manual button again reapplies
+that export and reloads its image files, which is useful if Painter overwrote
+textures at the same paths. Send from Painter at least once before using it.</p>
+<p>The REVO export contains separate Base Color, Roughness, Metallic, combined
+Normal, Height, Emission, Opacity and mixed AO maps. It supports UV tiles/UDIMs.
+Painter always produces an OpenGL combined normal for Blender. This is also true
+when the Painter project uses DirectX normals: Painter performs the conversion
+during export, so Blender must not flip the green channel again.</p>
+<p>Texture Set names do not have to remain identical to the original Blender
+material names. REVO first looks for an existing matching material. If none is
+found, it creates a Blender material named after the Painter Texture Set and
+replaces the original material slot on the object that was sent to Painter.</p>
+<h2 id="use-a-painter-material-on-another-blender-mesh">Use a Painter material on another Blender mesh<a class="headerlink" href="#use-a-painter-material-on-another-blender-mesh" title="Permanent link">¶</a></h2>
+<p>You can also use REVO Bridge as a material-only workflow. Import your target
+mesh into Blender, then open the painted project in Substance 3D Painter and
+choose <strong>File &gt; REVO Bridge: Export Textures to Blender</strong>. REVO imports the
+textures and creates a Blender material whose name matches the Painter Texture
+Set. Select the target mesh in Blender and assign that material from its
+material slots.</p>
+<p>This is useful when the Blender mesh was imported separately rather than sent
+to Painter through <strong>Create / Update Painter Project</strong>. In that case REVO can
+build the material, but you assign it to the desired mesh yourself.</p>
+<p>For each returned Texture Set, Blender creates or updates a Principled BSDF
+node setup. Base Color and Emission use sRGB; Roughness, Metallic, AO, Height,
+Opacity and Normal use non-color data. AO is multiplied with Base Color, and
+the OpenGL normal is connected through a Normal Map node. Height feeds a Bump
+node when no combined normal was exported. Existing REVO-generated Painter
+nodes are replaced on later sends so the material can be refreshed cleanly.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/Substancepainter_FileMenu.png" data-desc-position="bottom"><img alt="REVO Bridge command in Painter's File menu" class="doc-shot" src="../../assets/img/Substancepainter_FileMenu.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/Substancepainter_PluginLocation.png" data-desc-position="bottom"><img alt="REVO Bridge plugin location in Painter" class="doc-shot" src="../../assets/img/Substancepainter_PluginLocation.png"></a></p>
+<h2 id="settings-utilities">Settings (Utilities)<a class="headerlink" href="#settings-utilities" title="Permanent link">¶</a></h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/Substancepainter_settings.png" data-desc-position="bottom"><img alt="Substance 3D Painter settings" class="doc-shot" src="../../assets/img/Substancepainter_settings.png"></a></p>
+<ul>
+<li>Painter executable path</li>
+<li>Launch Painter on export</li>
+<li>Existing <code>.spp</code> project (leave empty to create a new project)</li>
+<li>Texture export folder, passed to Painter as the default export location</li>
+<li>Split by UDIM (Painter's one-Texture-Set-per-tile mode)</li>
+<li>Auto-import textures from Painter</li>
+<li>Enable remote scripting at launch</li>
+<li>UE5 ACES 2.0 Color Setup</li>
+</ul>
+<p>Leave <strong>Existing Project</strong> empty to create a new project. You can use your own existing Painter project, but <strong>make a copy of it first</strong>. Do not point <strong>Existing Project</strong> at the original. If you hit <strong>Save</strong> in Substance Painter, the opened file is overwritten. Always keep this in mind.</p>
+<p>New projects with no <code>.spp</code> set use Painter's current File → New defaults, because the official command line does not expose template, resolution, normal format or color management. <strong>Split by UDIM</strong> is the legacy one-Texture-Set-per-tile CLI flag and does not switch on Painter's modern UV Tile workflow; put that in the starter <code>.spp</code> instead.</p>
+<p>The plugin also copies the file you set into the <strong>Texture Export Folder</strong> on first export (the copy is the same size as the original, which can be several GB) and opens that working copy. That is an extra safety net, not a reason to skip making your own copy. Later exports reuse the working copy.</p>
+<h2 id="starter-project-best-practice">Starter project (best practice)<a class="headerlink" href="#starter-project-best-practice" title="Permanent link">¶</a></h2>
+<p>Painter's New Project window is how you pick shader, document resolution, normal format, UV Tile mode and color management. REVO cannot set those on the command line, so the reliable way is a starter <code>.spp</code>.</p>
+<ol>
+<li>In Painter, <strong>File → New</strong>, or open a project you already like.</li>
+<li>If it is a project you care about, <strong>duplicate it first</strong>. Do not use the original.</li>
+<li>A cube is enough if you are only storing settings. You will replace the mesh from Blender later.</li>
+<li>Set shader, resolution, OpenGL vs DirectX, UV Tile, ACES 2.0, and the rest.</li>
+<li>Save the copy somewhere you intend to work in, then point <strong>Existing Project</strong> at <strong>that copy</strong>.</li>
+<li><strong>Create / Update Painter Project</strong>. Work and <strong>File → Save</strong> only in the copy.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Do not use the original Painter project</p>
+<p>You can use your own existing projects, but make a copy first. Do not use the original. <strong>Save</strong> in Substance Painter overwrites the opened file. Always keep this in mind.</p>
+<p>The plugin may also duplicate the <code>.spp</code> (a full copy, which can be many GB). <strong>File → Save As</strong> can still overwrite the original. You are responsible for how you use this.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Disclaimer</p>
+<p>REVO Bridge is <strong>not responsible</strong> for lost Painter projects, overwritten files, or other data loss. You are responsible for how you use the plugin, including which <code>.spp</code> you point it at and when you save in Substance Painter. Keep your own backups.</p>
+</div>
+<h2 id="ue5-aces-20-color-setup">UE5 ACES 2.0 Color Setup<a class="headerlink" href="#ue5-aces-20-color-setup" title="Permanent link">¶</a></h2>
+<p>This is enabled by default for <strong>new</strong> projects only. REVO Bridge uses Painter's bundled ACES 2.0 OCIO configuration (ACEScg working space) and selects the sRGB display with the ACES 2.0 SDR Rec.709 view.</p>
+<p>Requires Painter <strong>11.0.3</strong> or newer. Existing <code>.spp</code> projects keep their own color-management setup. Blender's <code>OCIO</code> environment is not passed through, so a starter saved as Painter ACES 2.0 is not replaced by Blender's Linear Rec.709 config.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../baker/" class="btn btn-neutral float-left" title="Toolbag Baker"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../FAQ/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/revolutionart/Revo_Blender_Bridge" class="fa fa-code-fork" style="color: #fcfcfc"> revolutionart/Revo_Blender_Bridge</a>
+        </span>
+    
+    
+      <span><a href="../baker/" style="color: #fcfcfc">« Previous</a></span>
+    
+    
+      <span><a href="../FAQ/" style="color: #fcfcfc">Next »</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html><html class="writer-html5" lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="canonical" href="https://revolutionart.github.io/Revo_Blender_Bridge/getting-started/installation-and-update/">
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>Installation and Update - REVO Bridge</title>
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/theme_extra.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link href="../../stylesheets/custom.css" rel="stylesheet">
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Installation and Update";
+        var mkdocs_page_input_path = "getting-started/installation-and-update.md";
+        var mkdocs_page_url = "/Revo_Blender_Bridge/getting-started/installation-and-update/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+        </style></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> REVO Bridge
+        </a><div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here">
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Installation and Update</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#install-in-blender">Install in Blender</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#drag-and-drop-blender-42">Drag-and-drop (Blender 4.2+)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#install-from-disk">Install from Disk</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#after-installation">After installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dcc-plugin-locations">DCC plugin locations</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#update">Update</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uninstall-dcc-plugins">Uninstall DCC plugins</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#verify-installation">Verify installation</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../first-try/">First Try</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/user-interface/">User Interface</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/zbrush/">ZBrush</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/maya/">Maya</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/toolbag/">Marmoset Toolbag 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/baker/">Toolbag Baker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/painter/">Substance 3D Painter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user-guide/FAQ/">FAQ</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">REVO Bridge</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Getting Started</li>
+      <li class="breadcrumb-item active">Installation and Update</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/revolutionart/Revo_Blender_Bridge/edit/master/docs/getting-started/installation-and-update.md">Edit on revolutionart/Revo_Blender_Bridge</a>
+    </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="installation-and-update">Installation and Update<a class="headerlink" href="#installation-and-update" title="Permanent link">¶</a></h1>
+<p>Supported and workflow-tested Blender versions: 4.2 through 5.2. Windows only.</p>
+<h2 id="install-in-blender">Install in Blender<a class="headerlink" href="#install-in-blender" title="Permanent link">¶</a></h2>
+<p>The ZIP is a Blender Extension package. Do not extract it before installing.</p>
+<h3 id="drag-and-drop-blender-42">Drag-and-drop (Blender 4.2+)<a class="headerlink" href="#drag-and-drop-blender-42" title="Permanent link">¶</a></h3>
+<ol>
+<li>Open Blender.</li>
+<li>Drag <code>REVO_Bridge_Blender.zip</code> into the Blender window.</li>
+<li>Confirm the install prompt.</li>
+<li>Open the <strong>REVO Bridge</strong> tab in the 3D View N-Panel (<code>N</code>).</li>
+</ol>
+<h3 id="install-from-disk">Install from Disk<a class="headerlink" href="#install-from-disk" title="Permanent link">¶</a></h3>
+<p><code>Edit &gt; Preferences &gt; Get Extensions &gt; Install from Disk</code>, then choose <code>REVO_Bridge_Blender.zip</code>.</p>
+<p>If an older <strong>REVO Sync</strong> extension is still enabled, disable and remove it first. Blender treats <code>revo_bridge</code> as a new addon.</p>
+<h2 id="after-installation">After installation<a class="headerlink" href="#after-installation" title="Permanent link">¶</a></h2>
+<ol>
+<li>Confirm the <strong>REVO Bridge</strong> tab appears in the 3D View N-Panel.</li>
+<li>Confirm the bridge server shows as <strong>Running</strong> (Auto-Start is on by default).</li>
+<li>Open <strong>Utilities</strong> and set each DCC executable path you use.</li>
+<li>Open <strong>Integrations</strong> and choose <strong>Install / Update All DCC Plugins</strong>.</li>
+<li>Restart ZBrush, Maya, Toolbag and Painter if they were already open.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/tool_intergration_overview.png" data-desc-position="bottom"><img alt="Integrations panel" class="doc-shot" src="../../assets/img/tool_intergration_overview.png"></a></p>
+<p>Painter installs a Python helper plugin. Enable <code>revo_bridge_painter</code> from
+Painter's <strong>Python</strong> menu after restarting it.</p>
+<h2 id="dcc-plugin-locations">DCC plugin locations<a class="headerlink" href="#dcc-plugin-locations" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>DCC</th>
+<th>What gets installed</th>
+<th>Where to look after restart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ZBrush</td>
+<td>Compiled <code>REVO_Bridge.zsc</code> plus <code>REVO_BridgeData/sync_dir.txt</code></td>
+<td><strong>ZPlugin &gt; REVO Bridge</strong> and the REVO Bridge palette</td>
+</tr>
+<tr>
+<td>Maya</td>
+<td>Plugin, shelf, scripts, managed <code>userSetup.py</code> block</td>
+<td><strong>REVO_Bridge</strong> shelf; Plugin Manager: <code>REVO_Bridge.py</code></td>
+</tr>
+<tr>
+<td>Painter</td>
+<td>Python plugin and transfer-folder configuration</td>
+<td>Enable <code>revo_bridge_painter</code> in Painter's <strong>Python</strong> menu</td>
+</tr>
+<tr>
+<td>Toolbag 5</td>
+<td>User plugin folder <code>Revo_Bridge/__main__.py</code></td>
+<td>REVO Bridge window when Toolbag starts from Blender</td>
+</tr>
+</tbody>
+</table>
+<p>ZBrush 2026 loads <code>.zsc</code> at startup. A <code>.txt</code> left in the plugin folder is <strong>not</strong> compiled automatically.</p>
+<p>The Maya installer follows the version in the configured executable path. A Maya 2026 path installs into the Maya 2026 user folder even if Maya 2027 is also present.</p>
+<h2 id="update">Update<a class="headerlink" href="#update" title="Permanent link">¶</a></h2>
+<ol>
+<li>Install the new <code>REVO_Bridge_Blender.zip</code> over the previous extension.</li>
+<li>Run <strong>Install / Update All DCC Plugins</strong> once.</li>
+<li>Restart ZBrush, Maya, Toolbag and Painter so they pick up the new helpers.</li>
+</ol>
+<p>An update also replaces leftover REVO Sync plugin files.</p>
+<p>REVO Bridge makes a timestamped backup before changing Maya <code>userSetup.py</code>. Use <strong>Restore Maya userSetup.py</strong> in Integrations if you need the previous file.</p>
+<h2 id="uninstall-dcc-plugins">Uninstall DCC plugins<a class="headerlink" href="#uninstall-dcc-plugins" title="Permanent link">¶</a></h2>
+<p>Close ZBrush, Maya, Toolbag and Painter, then open <strong>Integrations</strong> and click
+<strong>Uninstall All DCC Plugins</strong>. Confirm the prompt and restart the DCCs.</p>
+<p>Each install or update records the exact REVO plugin destinations in a shared,
+Blender-version-independent manifest. The uninstall action removes only those
+recorded REVO files and the managed REVO block inside Maya <code>userSetup.py</code>. It
+does not remove projects, general DCC preferences, safety backups, Blender
+materials, or files in the transfer folder.</p>
+<p>For integrations installed by an older REVO Bridge build, run <strong>Install / Update
+All DCC Plugins</strong> once with the current version so their locations are recorded
+before uninstalling.</p>
+<h2 id="verify-installation">Verify installation<a class="headerlink" href="#verify-installation" title="Permanent link">¶</a></h2>
+<ul>
+<li>Blender: N-Panel tab <strong>REVO Bridge</strong>, server <strong>Running</strong>.</li>
+<li>ZBrush: <strong>ZPlugin &gt; REVO Bridge</strong> after restart.</li>
+<li>Maya: <strong>REVO_Bridge</strong> shelf after restart.</li>
+<li>Toolbag: Create Bake Project or Export to Toolbag launches Toolbag with a <strong>REVO Bridge</strong> window.</li>
+<li>Painter: Create / Update Painter Project launches Painter with the USD.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../introduction/" class="btn btn-neutral float-left" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../first-try/" class="btn btn-neutral float-right" title="First Try">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/revolutionart/Revo_Blender_Bridge" class="fa fa-code-fork" style="color: #fcfcfc"> revolutionart/Revo_Blender_Bridge</a>
+        </span>
+    
+    
+      <span><a href="../introduction/" style="color: #fcfcfc">« Previous</a></span>
+    
+    
+      <span><a href="../first-try/" style="color: #fcfcfc">Next »</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body></html>
