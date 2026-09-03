@@ -25,6 +25,19 @@ material names. REVO first looks for an existing matching material. If none is
 found, it creates a Blender material named after the Painter Texture Set and
 replaces the original material slot on the object that was sent to Painter.
 
+## Use a Painter material on another Blender mesh
+
+You can also use REVO Bridge as a material-only workflow. Import your target
+mesh into Blender, then open the painted project in Substance 3D Painter and
+choose **File > REVO Bridge: Export Textures to Blender**. REVO imports the
+textures and creates a Blender material whose name matches the Painter Texture
+Set. Select the target mesh in Blender and assign that material from its
+material slots.
+
+This is useful when the Blender mesh was imported separately rather than sent
+to Painter through **Create / Update Painter Project**. In that case REVO can
+build the material, but you assign it to the desired mesh yourself.
+
 For each returned Texture Set, Blender creates or updates a Principled BSDF
 node setup. Base Color and Emission use sRGB; Roughness, Metallic, AO, Height,
 Opacity and Normal use non-color data. AO is multiplied with Base Color, and
