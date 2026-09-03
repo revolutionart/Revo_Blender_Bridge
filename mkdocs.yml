@@ -1,0 +1,28 @@
+site_name: REVO Bridge
+theme:
+  name: readthedocs
+extra_css:
+  - stylesheets/custom.css
+plugins:
+  - search
+  - glightbox
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview: getting-started/index.md
+      - Introduction: getting-started/introduction.md
+      - Installation and Update: getting-started/installation-and-update.md
+      - First Try: getting-started/first-try.md
+  - User Guide:
+      - User Interface: user-guide/user-interface.md
+      - ZBrush: user-guide/zbrush.md
+      - Maya: user-guide/maya.md
+      - Marmoset Toolbag 5: user-guide/toolbag.md
+      - Toolbag Baker: user-guide/baker.md
+      - Substance 3D Painter: user-guide/painter.md
+      - FAQ: user-guide/FAQ.md
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
