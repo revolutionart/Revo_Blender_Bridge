@@ -9,7 +9,10 @@ Install the Painter helper from **Integrations**, restart Painter, and enable
 `revo_bridge_painter` from Painter's **Python** menu. Use
 **File > REVO Bridge: Export Textures to Blender** when the project is ready.
 Blender auto-imports the result by default, or you can click
-**Import Textures from Painter**.
+**Import Textures from Painter**. After an automatic import, REVO retains the
+latest successful export manifest. Clicking the manual button again reapplies
+that export and reloads its image files, which is useful if Painter overwrote
+textures at the same paths. Send from Painter at least once before using it.
 
 The REVO export contains separate Base Color, Roughness, Metallic, combined
 Normal, Height, Emission, Opacity and mixed AO maps. It supports UV tiles/UDIMs.

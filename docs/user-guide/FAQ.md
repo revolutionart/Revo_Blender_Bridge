@@ -86,8 +86,11 @@ or right-click it and choose USD.
 ### Q: Painter textures did not come back to Blender
 Install the Painter plugin from Blender's **Integrations**, restart Painter, and
 enable `revo_bridge_painter` from Painter's **Python** menu. Then use
-**File > REVO Bridge: Export Textures to Blender**. Texture Set names must still
-match the Blender material names created when the mesh was sent.
+**File > REVO Bridge: Export Textures to Blender**. Blender auto-imports by
+default. **Import Textures from Painter** reapplies the latest successful export
+and reloads image files; it has nothing to import until Painter has sent one.
+Texture Set names may be changed: Blender creates and assigns a corresponding
+material when no existing material matches.
 
 ### Q: Painter overwrote my starter file or an old painting
 You can use your own existing project, but copy it first. Do not point **Existing Project** at the original. **Save** in Substance Painter overwrites the opened file. Always keep this in mind. You are responsible for how you use this. REVO Bridge is not responsible for data loss. See [Starter project](painter.md#starter-project-best-practice).

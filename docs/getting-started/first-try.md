@@ -63,7 +63,8 @@ For baking, see [Toolbag Baker](../user-guide/baker.md). **Create Bake Project**
 
 When painting is complete, use Painter's **File > REVO Bridge: Export Textures
 to Blender**. Blender applies the returned maps automatically when auto-import
-is enabled; otherwise click **Import Textures from Painter**.
+is enabled; otherwise click **Import Textures from Painter**. The button can
+also reapply and reload the latest successful Painter export after auto-import.
 
 !!! warning "Do not use the original Painter project"
     You can use your own existing project, but copy it first. Do not point **Existing Project** at the original. **Save** in Substance Painter overwrites the opened file. Always keep this in mind. You are responsible for how you use this. REVO Bridge is not responsible for data loss. See [Starter project](../user-guide/painter.md#starter-project-best-practice).
