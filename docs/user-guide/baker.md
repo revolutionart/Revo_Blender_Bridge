@@ -9,10 +9,20 @@ Names follow Toolbag's Quick Loader convention:
 ```text
 asset_low
 asset_high
-asset_high_detail
+asset_high_01
 ```
 
-The text before `_low` or `_high` is the bake group. Extra text after the role is a variation in that group. Object names **and** mesh datablock names are set to this convention so Quick Loader can fill the High and Low slots.
+The text before `_low` or `_high` is the bake group. When you select several
+meshes and run **Name as Low** or **Name as High**, REVO names the first one
+`asset_low` or `asset_high`, followed by numbered variations such as
+`asset_high_01` and `asset_high_02`.
+
+Custom variation names are also valid—for example, `asset_high_detail`—but the
+naming dialog does not currently provide a variation field. To use a custom
+suffix, rename the Blender object manually and give its mesh datablock the same
+name, then run **Validate Names**. You can change the datablock name in **Object
+Data Properties**. Matching object and datablock names allow Toolbag Quick
+Loader to fill the correct High and Low slots.
 
 ## Setup
 
