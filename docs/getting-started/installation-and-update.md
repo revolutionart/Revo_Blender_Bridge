@@ -55,6 +55,21 @@ An update also replaces leftover REVO Sync plugin files.
 
 REVO Bridge makes a timestamped backup before changing Maya `userSetup.py`. Use **Restore Maya userSetup.py** in Integrations if you need the previous file.
 
+## Uninstall DCC plugins
+
+Close ZBrush, Maya, Toolbag and Painter, then open **Integrations** and click
+**Uninstall All DCC Plugins**. Confirm the prompt and restart the DCCs.
+
+Each install or update records the exact REVO plugin destinations in a shared,
+Blender-version-independent manifest. The uninstall action removes only those
+recorded REVO files and the managed REVO block inside Maya `userSetup.py`. It
+does not remove projects, general DCC preferences, safety backups, Blender
+materials, or files in the transfer folder.
+
+For integrations installed by an older REVO Bridge build, run **Install / Update
+All DCC Plugins** once with the current version so their locations are recorded
+before uninstalling.
+
 ## Verify installation
 
 - Blender: N-Panel tab **REVO Bridge**, server **Running**.

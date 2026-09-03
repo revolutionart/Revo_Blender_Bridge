@@ -31,8 +31,10 @@ A pending import shows a per-DCC **Clear … Pending** button. Use it when a sta
 | Install / Update All DCC Plugins | ZBrush, Maya, Toolbag and Painter in one step |
 | Install / Update ZBrush / Maya / Toolbag / Painter | Individual installers |
 | Restore Maya userSetup.py | Restore the newest backup made before REVO edited that file |
+| Uninstall All DCC Plugins | After confirmation, remove all recorded external REVO plugins while preserving projects, DCC preferences, backups and transfer data |
 
-Install or update only when needed, then restart the running DCC.
+Install or update only when needed, then restart the running DCC. Close all DCC
+applications before using the uninstall action.
 
 ## Utilities
 
