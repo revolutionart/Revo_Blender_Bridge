@@ -10,19 +10,17 @@ It is **not** a live-link. You export, work in the other application, then send 
 
 - Send and receive meshes with ZBrush, Maya and Marmoset Toolbag 5
 - Send USD to Painter and receive fully wired painted textures in Blender
+- Export selected Maya character hierarchies through FBX or USD, including
+  portable skeleton, skinning, blend-shape, and animation data
 - One-click installers for the ZBrush, Maya, Toolbag and Painter helpers
 - Configured Toolbag Baker projects from `_low` / `_high` meshes
-- Auto-import where the other app allows it. ZBrush receive is always a button. Toolbag only auto-imports from Blender when Blender **launches** Toolbag with the plugin; sending back to Blender needs **Edit > Plugins > Revo_Bridge** open. See [First Try](first-try.md#who-auto-imports-who-you-click)
+- Auto-import where the other app allows it. ZBrush receive is always a button. Toolbag only auto-imports from Blender when Blender **launches** Toolbag with the plugin; sending back to Blender needs **Edit > Plugins > Revo_Bridge** open. See [First Use](first-use.md#transfer-directions)
 - Localhost-only server with a private token (no public access)
 
 ## What it does not do
 
-- No live-link so it does not keep Blender and another DCC in sync while you sculpt or model
-- Painter returns painted PBR textures and wires matching Blender materials
-- REVO Bridge is not responsible for overwritten files or other data loss — you are responsible for how you use it
-- Maya exports selected character hierarchies through FBX or USD, including
-  portable skeleton, skinning, blend-shape, and animation data
-- Toolbag Baker cage paint and skew maps stay in Toolbag's native UI
+- It is not a live-link; work in the other DCC, then send back.
+- Cage painting and skew-map edits remain in Toolbag's Baker UI.
 
 ## N-Panel
 
@@ -43,12 +41,13 @@ Use the N-Panel workflow:
 | Export to ZBrush / Maya / Toolbag | Sends the current mesh selection |
 | Import from ZBrush / Maya / Toolbag | Loads the last send waiting in the transfer folder |
 | Create Bake Project | Names, validates and builds a Toolbag Baker |
-| Create / Update Painter Project | Exports USD and opens Painter. Copy an existing `.spp` first; do not use the original |
+| Create / Update Painter Project | Exports USD and opens Painter. Existing `.spp` projects are copied to a working file automatically |
 | Install / Update All DCC Plugins | Copies helpers into ZBrush, Maya, Toolbag and Painter |
 
 ## Required Blender version
 
-- Supported and tested: Blender 4.2 through 5.2, Windows 10/11 64-bit
+- Supported and tested: Blender 4.2 through 5.2, Windows 10/11, x64 and ARM64
+  (verified on a Snapdragon-based Surface Pro)
 - End-to-end tested with: Maya 2026/2027 (including rigs), ZBrush 2026,
   Toolbag 5, and Substance 3D Painter 11.0.3+ project and material exchange
 - Add-on version: 1.0.0

@@ -1,6 +1,7 @@
 # Installation and Update
 
-Supported and workflow-tested Blender versions: 4.2 through 5.2. Windows only.
+Supported and workflow-tested Blender versions: 4.2 through 5.2. Windows only
+(x64 and ARM64, including Snapdragon-based devices such as the Surface Pro).
 
 ## Install in Blender
 
@@ -60,15 +61,9 @@ REVO Bridge makes a timestamped backup before changing Maya `userSetup.py`. Use 
 Close ZBrush, Maya, Toolbag and Painter, then open **Integrations** and click
 **Uninstall All DCC Plugins**. Confirm the prompt and restart the DCCs.
 
-Each install or update records the exact REVO plugin destinations in a shared,
-Blender-version-independent manifest. The uninstall action removes only those
-recorded REVO files and the managed REVO block inside Maya `userSetup.py`. It
-does not remove projects, general DCC preferences, safety backups, Blender
-materials, or files in the transfer folder.
-
-For integrations installed by an older REVO Bridge build, run **Install / Update
-All DCC Plugins** once with the current version so their locations are recorded
-before uninstalling.
+Uninstall removes REVO Bridge plugin files and the managed block in Maya
+`userSetup.py`. Projects, DCC preferences, backups, Blender materials, and
+transfer-folder contents remain untouched.
 
 ## Verify installation
 

@@ -1,10 +1,10 @@
-# First Try
+# First Use
 
 Use a simple mesh (a UV-unwrapped cube is enough) to confirm each DCC you care about.
 
-## Who auto-imports, who you click
+## Bridge Directions
 
-REVO Bridge is send and receive, not a live-link. Some directions import on their own. Others need a button in that DCC.
+Some directions auto-import; others need a button in that DCC.
 
 | Send | Receive | Auto? | What you do |
 | --- | --- | --- | --- |
@@ -12,9 +12,10 @@ REVO Bridge is send and receive, not a live-link. Some directions import on thei
 | ZBrush → Blender | Blender | Yes | In ZBrush, click **Send to Blender**. Blender auto-imports if that option is on |
 | Blender → Maya | Maya | Yes | **Export to Maya**. Maya auto-imports after the plugin is installed |
 | Maya → Blender | Blender | Yes | In Maya, **Export to Blender**. Blender auto-imports if that option is on |
-| Blender → Toolbag | Toolbag | Yes | **Export to Toolbag** or **Create Bake Project**. Blender **launches** Toolbag with the REVO plugin as a boot script, so the window opens and Toolbag imports |
+| Blender → Toolbag | Toolbag | Yes | **Export to Toolbag** or **Create Bake Project**. Blender **launches** Toolbag with the REVO Bridge plugin as a boot script, so the window opens and Toolbag imports |
 | Toolbag → Blender | Blender | File yes, plugin no | In Toolbag open **Edit > Plugins > Revo_Bridge** and leave it open, then **Export Scene to Blender**. Blender auto-imports that file. Focusing Toolbag does not start the plugin |
-| Blender ↔ Painter | Both | Yes | **Create / Update Painter Project**, then Painter **File > REVO Bridge: Export Textures to Blender** |
+| Blender ↔ Painter | Both | Yes | **Create Painter Project**, then Painter **File > REVO Bridge: Export Textures to Blender** |
+
 
 ## Before you start
 
@@ -22,14 +23,25 @@ REVO Bridge is send and receive, not a live-link. Some directions import on thei
 - Executable paths are set under **Utilities**.
 - Plugins were installed from **Integrations** and the DCC was restarted.
 
+<p align="center">
+	<a class="glightbox" href="../../assets/img/blender_bridge_server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+		<img src="../../assets/img/blender_bridge_server.png" alt="Opacity cutout sample" width="700">
+	</a>
+</p>
+
+
 ## ZBrush
 
-1. Select the meshes and armature or character hierarchy in Blender, then choose
-   **Utilities > Maya > Transfer Format: FBX or USD**.
+1. Select one or more mesh objects in Blender.
 2. Click **Export to ZBrush**.
 3. In ZBrush, check the **active SubTool** — receive overwrites it.
 4. Click **Receive from Blender** in the REVO Bridge palette.
 5. Use **Send to Blender**, then **Import from ZBrush** in Blender (or wait for Blender auto-import).
+<p align="center">
+	<a class="glightbox" href="../../assets/img/zbrush_settings_interface.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+		<img src="../../assets/img/zbrush_settings_interface.png" alt="Opacity cutout sample" width="300">
+	</a>
+</p>
 
 ## Maya
 
@@ -44,6 +56,12 @@ FBX and USD carry portable hierarchy, skeleton, skinning, blend-shape, and anima
 data. Maya-only controller logic and custom dependency-graph nodes do not have an
 equivalent cross-DCC representation, so bake animation when needed.
 
+<p align="center">
+	<a class="glightbox" href="../../assets/img/maya_settings_interface.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+		<img src="../../assets/img/maya_settings_interface.png" alt="Opacity cutout sample" width="300">
+	</a>
+</p>
+
 ## Toolbag 5
 
 1. Select the mesh in Blender.
@@ -55,19 +73,40 @@ If Toolbag was already open without the plugin window, Export to Toolbag still w
 
 For baking, see [Toolbag Baker](../user-guide/baker.md). **Create Bake Project** also launches Toolbag with the plugin so the baker is built automatically. It always uses FBX, not USD.
 
+<p align="center">
+	<a class="glightbox" href="../../assets/img/marmosettoolbag5_settings_03.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+		<img src="../../assets/img/marmosettoolbag5_settings_03.png" alt="Opacity cutout sample" width="350">
+	</a>
+</p>
+
 ## Painter
 
 1. Select the mesh in Blender (materials should use Principled BSDF).
-2. Click **Create / Update Painter Project**.
-3. Painter opens a new project, or a **working copy** of the `.spp` set under **Existing Project**.
+2. Click **Create Painter Project**.
+3. Painter opens a new project, or the working copy of the `.spp` set under **Existing Project**.
+
+For UDIMs, use **Split by UDIM (Legacy)** for one Texture Set per tile, or
+**Use UV Tiles** for one Texture Set containing its tiles.
+
+Use **Existing Project** to reuse a saved Painter setup, such as a different
+shader or color-management settings.
 
 When painting is complete, use Painter's **File > REVO Bridge: Export Textures
 to Blender**. Blender applies the returned maps automatically when auto-import
 is enabled; otherwise click **Import Textures from Painter**. The button can
-also reapply and reload the latest successful Painter export after auto-import.
+also reapply the latest successful Painter export. When **Existing Project** is
+set, REVO Bridge opens its working copy; saving in Painter overwrites that copy.
 
-!!! warning "Do not use the original Painter project"
-    You can use your own existing project, but copy it first. Do not point **Existing Project** at the original. **Save** in Substance Painter overwrites the opened file. Always keep this in mind. You are responsible for how you use this. REVO Bridge is not responsible for data loss. See [Starter project](../user-guide/painter.md#starter-project-best-practice).
+<p align="center">
+	<a class="glightbox" href="../../assets/img/Substancepainter_PluginLocation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+		<img src="../../assets/img/Substancepainter_PluginLocation.png" alt="Opacity cutout sample" width="300">
+	</a>
+</p>
+<p align="center">
+	<a class="glightbox" href="../../assets/img/Substancepainter_FileMenu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+		<img src="../../assets/img/Substancepainter_FileMenu.png" alt="Opacity cutout sample" width="300">
+	</a>
+</p>
 
 ## If nothing happens
 

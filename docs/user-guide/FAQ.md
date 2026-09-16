@@ -15,7 +15,8 @@ Default: `%TEMP%\REVO_Bridge`. Open it from **Utilities > Open Transfer Folder**
 No. It listens on `127.0.0.1` only (default port `58772`). Commands need a private token in the transfer folder. Browser-origin requests are rejected.
 
 ### Q: Who is responsible if a file is overwritten?
-You are. REVO Bridge is not responsible for lost Painter projects or other data loss. You are responsible for how you use the plugin, including which files you point it at and when you save in the other applications.
+Use copies and keep backups of projects you care about. In Painter, **Save**
+overwrites the open project.
 
 ---
 
@@ -63,16 +64,16 @@ Cage offsets are authored in Blender units and converted to Toolbag centimetres 
 
 ## Send and receive
 
-### Q: Why does Export to Toolbag open the REVO plugin, but Import from Toolbag does not?
-Blender can only start the Toolbag plugin by **launching** Toolbag with the plugin as a boot script. That is what **Export to Toolbag** and **Create Bake Project** do, so the window appears and Toolbag auto-imports.
-
-**Import from Toolbag** talks to a Toolbag that is already running. Toolbag does not let another app open a plugin in an existing session. Focusing Toolbag is not enough. Open **Edit > Plugins > Revo_Bridge** once, leave the window open, then **Export Scene to Blender**. Blender auto-imports that file.
+### Q: Why does Export to Toolbag open the REVO Bridge plugin, but Import from Toolbag does not?
+Blender starts the plugin when it launches Toolbag. For an existing Toolbag
+session, open **Edit > Plugins > Revo_Bridge**, then use **Export Scene to
+Blender**. See [Send and receive](toolbag.md#send-and-receive).
 
 ### Q: Does ZBrush auto-import from Blender?
 No. ZScript has no idle timer that is safe for this. Always click **Receive from Blender**. Send the other way with **Send to Blender**; Blender can auto-import.
 
 ### Q: Does Maya auto-import both ways?
-Yes, after the Maya plugin is installed and Maya has been restarted. Blender auto-import from Maya is on by default.
+Yes, after the Maya plugin is installed and Maya has been restarted.
 
 ### Q: ZBrush overwrote the wrong SubTool
 Receive always replaces the **active** SubTool. Select the correct one before you click **Receive from Blender**. ZBrush does not auto-import.
@@ -93,10 +94,15 @@ Texture Set names may be changed: Blender creates and assigns a corresponding
 material when no existing material matches.
 
 ### Q: Painter overwrote my starter file or an old painting
-You can use your own existing project, but copy it first. Do not point **Existing Project** at the original. **Save** in Substance Painter overwrites the opened file. Always keep this in mind. You are responsible for how you use this. REVO Bridge is not responsible for data loss. See [Starter project](painter.md#starter-project-best-practice).
+REVO Bridge opens a working copy of the `.spp` selected in **Existing Project**.
+It is stored in the **Texture Export Folder** (default: `Textures/Substance`
+beside the Blender file) and named after the Blender file. **Save** in Painter
+overwrites that working copy. See [Use a custom Painter project](painter.md#use-a-custom-painter-project).
 
 ### Q: Why did duplicating the Painter project take so much disk space?
-The plugin's extra working copy is a full file copy of the `.spp`, not a shortcut. Copy a small starter yourself first. Do not point **Existing Project** at a finished multi-gigabyte painting unless you want that much duplicated.
+On the first launch, REVO Bridge makes a full working copy of the `.spp` set in
+**Existing Project**. It is not a shortcut, so it needs about the same disk
+space as the source project. Later launches reuse that copy.
 
 ---
 

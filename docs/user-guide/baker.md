@@ -1,6 +1,6 @@
 # Marmoset Toolbag 5 Baker
 
-**Create Bake Project** validates the selected high/low meshes, exports them as FBX, and **launches Toolbag with the REVO plugin** so Toolbag imports the meshes and builds a configured native Baker. You bake and preview in Toolbag, not in Blender. If Toolbag is already open without that window, open **Edit > Plugins > Revo_Bridge** so it can read the bake request.
+**Create Bake Project** validates the selected high/low meshes, exports them as FBX, and **launches Toolbag with the REVO Bridge plugin** so Toolbag imports the meshes and builds a configured native Baker. You bake and preview in Toolbag, not in Blender. If Toolbag is already open without that window, open **Edit > Plugins > Revo_Bridge** so it can read the bake request.
 
 ## Naming
 
@@ -13,7 +13,7 @@ asset_high_01
 ```
 
 The text before `_low` or `_high` is the bake group. When you select several
-meshes and run **Name as Low** or **Name as High**, REVO names the first one
+meshes and run **Name as Low** or **Name as High**, REVO Bridge names the first one
 `asset_low` or `asset_high`, followed by numbered variations such as
 `asset_high_01` and `asset_high_02`.
 
@@ -61,7 +61,7 @@ Configured from Utilities → Marmoset Toolbag 5:
 - All Toolbag 5 bake maps, with extra controls for normals, AO, curvature, height, thickness and bent normals
 - AO uses Toolbag names: Ray Count, Search Distance, Cavity Weight, Floor Occlusion, Floor, Ignore Groups, Two-Sided
 - Metalness/Roughness or Specular/Gloss material workflow
-- Saved REVO baker presets
+- Saved REVO Bridge baker presets
 
 Default maps: Normals, Ambient Occlusion, Curvature, Material ID.
 

@@ -30,8 +30,8 @@ A pending import shows a per-DCC **Clear … Pending** button. Use it when a sta
 | Restart | Restart the local bridge server |
 | Install / Update All DCC Plugins | ZBrush, Maya, Toolbag and Painter in one step |
 | Install / Update ZBrush / Maya / Toolbag / Painter | Individual installers |
-| Restore Maya userSetup.py | Restore the newest backup made before REVO edited that file |
-| Uninstall All DCC Plugins | After confirmation, remove all recorded external REVO plugins while preserving projects, DCC preferences, backups and transfer data |
+| Restore Maya userSetup.py | Restore the newest backup made before REVO Bridge edited that file |
+| Uninstall All DCC Plugins | After confirmation, remove all recorded external REVO Bridge plugins while preserving projects, DCC preferences, backups and transfer data |
 
 Install or update only when needed, then restart the running DCC. Close all DCC
 applications before using the uninstall action.
@@ -44,7 +44,7 @@ Quick settings live here so you do not have to open Blender Preferences for ever
 
 - **Clear Pending Data** and **Open Transfer Folder**
 - Per-DCC expandable blocks for ZBrush, Maya, Painter and Toolbag
-- Painter existing-project caution (copy first, do not use the original) under Substance 3D Painter
+- Painter existing-project working-copy status under Substance 3D Painter
 - Toolbag baker output, maps, geometry, tangents and presets
 
 The local server **port** and a custom transfer parent folder are in `Edit > Preferences > Add-ons > REVO Bridge`. A custom folder still uses a `REVO_Bridge` subfolder inside it.

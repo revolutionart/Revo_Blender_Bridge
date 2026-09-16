@@ -19,7 +19,7 @@ Use the navigation on the left to get started.
 
 1. [Introduction](getting-started/introduction.md) — what it does and what it does not do
 2. [Installation and Update](getting-started/installation-and-update.md) — Blender ZIP plus DCC plugins
-3. [First Try](getting-started/first-try.md) — send a mesh and confirm each DCC
+3. [First Try](getting-started/first-use.md) — send a mesh and confirm each DCC
 
 ## User guide
 

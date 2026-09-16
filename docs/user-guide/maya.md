@@ -34,12 +34,6 @@ then click the Maya shelf's **FBX** or **USD** export button.
 - USD includes the selected hierarchy as well as UsdSkel skeletons, skinning,
   animation over Maya's playback range, blend shapes, and USD Preview Surface materials.
 
-!!! warning "Interchange limits"
-    FBX and USD preserve the portable character data, not Maya's complete native
-    dependency graph. Maya-only controller logic, expressions, custom nodes, and
-    some constraints cannot become equivalent Blender rig logic. Bake animation
-    first when that logic drives motion that must arrive exactly.
-
 ## Settings (Utilities)
 
 ![Maya settings](../assets/img/maya_settings.png){ .doc-shot }

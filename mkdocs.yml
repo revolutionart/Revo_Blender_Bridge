@@ -15,7 +15,7 @@ nav:
       - Overview: getting-started/index.md
       - Introduction: getting-started/introduction.md
       - Installation and Update: getting-started/installation-and-update.md
-      - First Try: getting-started/first-try.md
+      - First Use: getting-started/first-use.md
   - User Guide:
       - User Interface: user-guide/user-interface.md
       - ZBrush: user-guide/zbrush.md
