@@ -24,6 +24,7 @@ nav:
       - Toolbag Baker: user-guide/baker.md
       - Substance 3D Painter: user-guide/painter.md
       - FAQ: user-guide/FAQ.md
+      - Changelog: user-guide/changelog.md
 markdown_extensions:
   - admonition
   - attr_list
