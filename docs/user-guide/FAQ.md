@@ -6,7 +6,7 @@
 No. Each send writes files to the transfer folder. You export, work in the other DCC, then send back.
 
 ### Q: Does it work on macOS?
-No. REVO Bridge 1.0.0 is Windows only.
+No. REVO Bridge is Windows only.
 
 ### Q: Where are the transfer files?
 Default: `%TEMP%\REVO_Bridge`. Open it from **Utilities > Open Transfer Folder**. A custom parent folder in Preferences still uses a `REVO_Bridge` subfolder.

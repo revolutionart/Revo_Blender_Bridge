@@ -1,10 +1,17 @@
 # User Interface
 
-The **REVO Bridge** tab in the 3D View N-Panel has three sections.
+The **REVO Bridge** tab in the 3D View N-Panel has four tabs, switched with the
+icon buttons down its left side: **Bridge**, **Integrations**, **Utilities** and
+**Help**.
+
+Each DCC has its own collapsible section, collapsed by default; click anywhere
+on a header to open or close it. Sections are color coded so you can scan the
+panel and find the tool you need, and each DCC keeps the same color and order
+(ZBrush, Toolbag, Painter, Maya) on every tab.
 
 ![REVO Bridge main panel](../assets/img/tool_overview.png){ .doc-shot }
 
-## REVO Bridge (main)
+## Bridge
 
 Status first, then per-DCC export/import.
 
@@ -13,7 +20,7 @@ Status first, then per-DCC export/import.
 | Bridge Server | Running or stopped, plus which DCCs Blender can see |
 | ZBrush | Export to ZBrush, Import from ZBrush. Warns that receive overwrites the active SubTool |
 | Marmoset Toolbag 5 | Export to Toolbag (launches Toolbag with the plugin), Import from Toolbag (needs **Edit > Plugins > Revo_Bridge** already open), baker naming and **Create Bake Project** |
-| Substance 3D Painter | Create / Update Painter Project, Import Textures from Painter |
+| Substance 3D Painter | Create / Update Painter Project, Import Textures from Painter, Bake Project (Name as Low/High, Validate Names, Create Low/Low Bake, Create Low/High Bake) |
 | Maya | Export to Maya, Import from Maya |
 
 A pending import shows a per-DCC **Clear … Pending** button. Use it when a stale file is blocking a new send.
@@ -43,10 +50,14 @@ applications before using the uninstall action.
 Quick settings live here so you do not have to open Blender Preferences for every path.
 
 - **Clear Pending Data** and **Open Transfer Folder**
-- Per-DCC expandable blocks for ZBrush, Maya, Painter and Toolbag
+- Per-DCC expandable blocks for ZBrush, Toolbag, Painter and Maya (same order as the Bridge tab)
 - Painter existing-project working-copy status under Substance 3D Painter
 - Toolbag baker output, maps, geometry, tangents and presets
 
 The local server **port** and a custom transfer parent folder are in `Edit > Preferences > Add-ons > REVO Bridge`. A custom folder still uses a `REVO_Bridge` subfolder inside it.
 
 Default transfer folder: `%TEMP%\REVO_Bridge`.
+
+## Help
+
+Links to this documentation, the Discord community and ArtStation.

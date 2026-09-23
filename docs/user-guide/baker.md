@@ -2,6 +2,8 @@
 
 **Create Bake Project** validates the selected high/low meshes, exports them as FBX, and **launches Toolbag with the REVO Bridge plugin** so Toolbag imports the meshes and builds a configured native Baker. You bake and preview in Toolbag, not in Blender. If Toolbag is already open without that window, open **Edit > Plugins > Revo_Bridge** so it can read the bake request.
 
+The same naming drives the Substance 3D Painter [Bake Project](painter.md#bake-project).
+
 ## Naming
 
 Names follow Toolbag's Quick Loader convention:

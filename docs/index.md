@@ -5,7 +5,7 @@
 
 REVO Bridge moves selected meshes between **Blender**, **ZBrush**, **Maya**, **Marmoset Toolbag 5** and **Substance 3D Painter**. It is a send/receive round-trip, not a live-link. It also creates a configured Toolbag Baker project from named high and low meshes.
 
-Public version: **1.0.0**
+Public version: **1.1.0**
 
 Workflow-tested across Blender **4.2 through 5.2** with ZBrush 2026,
 Marmoset Toolbag 5, Maya 2026/2027 character rigs, and Substance 3D Painter

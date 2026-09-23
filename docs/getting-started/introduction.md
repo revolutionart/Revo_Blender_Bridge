@@ -50,7 +50,7 @@ Use the N-Panel workflow:
   (verified on a Snapdragon-based Surface Pro)
 - End-to-end tested with: Maya 2026/2027 (including rigs), ZBrush 2026,
   Toolbag 5, and Substance 3D Painter 11.0.3+ project and material exchange
-- Add-on version: 1.0.0
+- Add-on version: 1.1.0
 - License: GPL-3.0-or-later (Maya shelf icons are CC0-1.0)
 
 ## Verified compatibility
