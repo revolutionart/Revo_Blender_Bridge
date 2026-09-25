@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.1
+
+### Fixed
+
+- Export to Toolbag, Create Bake Project and sends to ZBrush, Maya or Painter
+  could stop working with no error. Windows Storage Sense or a temp cleaner
+  deleted the bridge's private token from `%TEMP%\REVO_Bridge`. The bridge now
+  restores the token itself, and Toolbag exports are never dropped silently.
+- **Restart** in **Integrations** could not stop a bridge server in that state.
+  It now replaces it, and Blender does the same when it starts.
+
 ## 1.1.0
 
 ### New

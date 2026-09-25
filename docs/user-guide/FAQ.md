@@ -69,6 +69,11 @@ Blender starts the plugin when it launches Toolbag. For an existing Toolbag
 session, open **Edit > Plugins > Revo_Bridge**, then use **Export Scene to
 Blender**. See [Send and receive](toolbag.md#send-and-receive).
 
+### Q: Export to Toolbag says it worked, but nothing arrives
+Update to 1.1.1 or later. Older versions stop sending when Windows Storage Sense
+or a temp cleaner removes the bridge's token file from `%TEMP%\REVO_Bridge`.
+On 1.1.0, restart Blender to get a fresh bridge server.
+
 ### Q: Does ZBrush auto-import from Blender?
 No. ZScript has no idle timer that is safe for this. Always click **Receive from Blender**. Send the other way with **Send to Blender**; Blender can auto-import.
 
